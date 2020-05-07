@@ -137,12 +137,17 @@
     <Compile Include="Engine\Items\Sword.cs" />
     <Compile Include="Engine\MapMatrix.cs" />
     <Compile Include="Engine\MetaMapMatrix.cs" />
+    <Compile Include="Engine\Monsters\MonsterFactories\ScorpionEmperorFactory.cs" />
+    <Compile Include="Engine\Monsters\MonsterFactories\ScorpionFactory.cs" />
+    <Compile Include="Engine\Monsters\Scorpion.cs" />
     <Compile Include="Engine\Monsters\Monster.cs" />
     <Compile Include="Engine\CharacterClasses\Player.cs" />
     <Compile Include="Engine\Monsters\MonsterFactories\MonsterFactory.cs" />
     <Compile Include="Engine\Monsters\MonsterFactories\RatFactory.cs" />
     <Compile Include="Engine\Monsters\Rat.cs" />
     <Compile Include="Engine\Monsters\RatEvolved.cs" />
+    <Compile Include="Engine\Monsters\ScorpionEmperor.cs" />
+    <Compile Include="Engine\Monsters\ScorpionGiant.cs" />
     <Compile Include="Engine\SaveData.cs" />
     <Compile Include="Engine\Skills\BasicSpells\FireArrow.cs" />
     <Compile Include="Engine\Skills\BasicSpells\FireArrowDecorator.cs" />
@@ -243,6 +248,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Display\Assets\interaction0001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Display\Assets\monster0005.png" />
+    <Resource Include="Display\Assets\monster0004.png" />
+    <Resource Include="Display\Assets\monster0003.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
