@@ -9,13 +9,13 @@ namespace Game.Engine.Monsters
 		// Monster. The biggest/strongest in scorpion group
 		public ScorpionGiant(int playerLevel)
 		{
-			Health = 40 + 10 * playerLevel;
+			Health = 30 + 10 * playerLevel;
 			Strength = 15 + 2 * playerLevel;
-			Armor = 70;
-			Precision = 100 + 2 * playerLevel;
+			Armor = 80;
+			Precision = 70 + 2 * playerLevel;
 			MagicPower = 0;
 			Stamina = 5 + 10 * playerLevel;
-			XPValue = 100 + playerLevel;
+			XPValue = 60 + playerLevel;
 			Name = "monster0004";
 			BattleGreetings = "You will die before crossing this doorstep!";
 		}
