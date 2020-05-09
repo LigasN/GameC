@@ -85,7 +85,7 @@ I've created three monsters Scorpion (the most basic one), Scorpion Giant which 
 I've created three items: 
 * Crystal Armor![CrystalArmor](./Display/Assets/item0010.png) - the most complicated one. Gives player 5% to player's biggest statistic everytime player receive a hit from monster which main statistic will be different
 * Golden Dragon Armor![GoldenDragonArmor](./Display/Assets/item0011.png) - as much hp damage player receive as much damage spread for every statistic player will cause in next turn
-* Thanos's Glow![Thanos'sGlow](./Display/Assets/item0009.png) - doubles strength and lower stamina to 70%
+* Thanos's Glow![Thanos'sGlow](./Display/Assets/item0009.png) - doubles strength and reduces stamina to 70%
 * All the foregoings items have one fabric class.
 
 ### New group of skills
