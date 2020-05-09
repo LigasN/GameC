@@ -153,6 +153,12 @@
     <Compile Include="Engine\Monsters\ScorpionEmperor.cs" />
     <Compile Include="Engine\Monsters\ScorpionGiant.cs" />
     <Compile Include="Engine\SaveData.cs" />
+    <Compile Include="Engine\Skills\RefinedMovements\BerserkerRage.cs" />
+    <Compile Include="Engine\Skills\RefinedMovements\BerserkerRageDecorator.cs" />
+    <Compile Include="Engine\Skills\RefinedMovements\FrighteningPitting.cs" />
+    <Compile Include="Engine\Skills\RefinedMovements\FrighteningPittingDecorator.cs" />
+    <Compile Include="Engine\Skills\RefinedMovements\TwistPierce.cs" />
+    <Compile Include="Engine\Skills\RefinedMovements\TwistPierceDecorator.cs" />
     <Compile Include="Engine\Skills\BasicSpells\FireArrow.cs" />
     <Compile Include="Engine\Skills\BasicSpells\FireArrowDecorator.cs" />
     <Compile Include="Engine\Skills\BasicSpells\LightFlash.cs" />
@@ -162,6 +168,7 @@
     <Compile Include="Engine\Skills\BasicWeaponMoves\SwordSlash.cs" />
     <Compile Include="Engine\Skills\Skill.cs" />
     <Compile Include="Engine\Skills\SkillDecorator.cs" />
+    <Compile Include="Engine\Skills\SkillFactories\RefinedMovementsFactory.cs" />
     <Compile Include="Engine\Skills\SkillFactories\BasicSpellFactory.cs" />
     <Compile Include="Engine\Skills\BasicSpells\WindGust.cs" />
     <Compile Include="Engine\Skills\BasicSpells\WindGustDecorator.cs" />
