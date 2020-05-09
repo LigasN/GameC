@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Data;
 
 namespace Game.Engine
 {
@@ -15,6 +16,55 @@ namespace Game.Engine
     // OTHERS - poison
     public class StatPackage
     {
+
+        //----TaskG1-G2--------------------------
+
+        // Needed for operations on all damages
+        public enum Statistics
+        {
+            Health,
+            Strength,
+            Armor,
+            Precision,
+            MagicPower,
+            Stamina, // it is a stat too
+            Size // just size of this enum
+        }
+
+        public List<int> getDmgStatistics()
+        {
+            return new List<int> { HealthDmg, StrengthDmg, ArmorDmg, PrecisionDmg, MagicPowerDmg };
+        }
+        public void addToSpecificDmgStatistic(Statistics statistic, int deltaValue)
+        {
+            switch(statistic)
+            {
+                case Statistics.Health:
+                    HealthDmg += deltaValue;
+                    break;
+                case Statistics.Strength:
+                    StrengthDmg += deltaValue;
+                    break;
+                case Statistics.Armor:
+                    ArmorDmg += deltaValue;
+                    break;
+                case Statistics.Precision:
+                    PrecisionDmg += deltaValue;
+                    break;
+                case Statistics.MagicPower:
+                    MagicPowerDmg += deltaValue;
+                    break;
+                case Statistics.Stamina:
+                    MagicPowerDmg += deltaValue;
+                    break;
+                case Statistics.Size:
+                default:
+                    throw new ValueUnavailableException();
+            }
+        }
+
+        //----!TaskG1-G2--------------------------
+
         public int HealthDmg { get; set; }
         public int StrengthDmg { get; set; }
         public int ArmorDmg { get; set; }

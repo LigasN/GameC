@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Data;
 using Game.Display;
 using Game.Engine.Skills;
 
@@ -10,6 +11,46 @@ namespace Game.Engine.CharacterClasses
     public abstract class Player : Subject
     {
         // statistics: Health, Strength, Armor, Precision, MagicPower, Stamina, XP (hidden), Level, Gold
+
+
+        //----TaskG1-G2--------------------------
+
+        // Needed for operations on all statistics
+        public List<int> getStatistics()
+        {
+            return new List<int> { Health, Strength, Armor, Precision, MagicPower };
+        }
+
+        public void AddToSpecificStatistic( StatPackage.Statistics statistic, int deltaValue)
+        {
+            switch(statistic)
+            {
+                case StatPackage.Statistics.Health:
+                    HealthBuff += deltaValue;
+                    break;
+                case StatPackage.Statistics.Strength:
+                    StrengthBuff += deltaValue;
+                    break;
+                case StatPackage.Statistics.Armor:
+                    ArmorBuff += deltaValue;
+                    break;
+                case StatPackage.Statistics.Precision:
+                    PrecisionBuff += deltaValue;
+                    break;
+                case StatPackage.Statistics.MagicPower:
+                    MagicPowerBuff += deltaValue;
+                    break;
+                case StatPackage.Statistics.Stamina:
+                    MagicPowerBuff += deltaValue;
+                    break;
+                case StatPackage.Statistics.Size:
+                default:
+                    throw new ValueUnavailableException();
+            }
+        }
+
+        //----!TaskG1-G2--------------------------
+
         public List<Skill> ListOfSkills { get; protected set; }
         protected GameSession parentSession;
         protected int xp, gold;

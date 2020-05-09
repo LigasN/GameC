@@ -132,6 +132,10 @@
     <Compile Include="Engine\Items\BasicAxe.cs" />
     <Compile Include="Engine\Items\ItemFactories\BasicArmorFactory.cs" />
     <Compile Include="Engine\Items\ItemFactories\ItemFactory.cs" />
+    <Compile Include="Engine\Items\ItemFactories\RefinedArmorFactory.cs" />
+    <Compile Include="Engine\Items\RefinedArmor\CrystalArmor.cs" />
+    <Compile Include="Engine\Items\RefinedArmor\GoldenDragonArmor.cs" />
+    <Compile Include="Engine\Items\RefinedArmor\Thanos%27sGlow.cs" />
     <Compile Include="Engine\Items\Spear.cs" />
     <Compile Include="Engine\Items\Staff.cs" />
     <Compile Include="Engine\Items\Sword.cs" />
@@ -253,6 +257,12 @@
     <Resource Include="Display\Assets\monster0005.png" />
     <Resource Include="Display\Assets\monster0004.png" />
     <Resource Include="Display\Assets\monster0003.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Display\Assets\item0009.png" />
+    <Resource Include="Display\Assets\item0010.png" />
+    <Resource Include="Display\Assets\item0011.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

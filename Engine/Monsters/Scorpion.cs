@@ -25,9 +25,10 @@ namespace Game.Engine.Monsters
 			{
 				Stamina -= 5;
 				return new List<StatPackage>()
-					{ new StatPackage("incised", 10, (5 * Strength + XPValue),
+					{ new StatPackage("incised", 10, (5 * Strength + XPValue) / 10,
 					(Strength + 2 * Precision + XPValue * 5) * (Stamina / 100) / 100, Precision * XPValue / 10000, MagicPower,
-					"Ghhzzz!") };
+					("Ghhzzz!: hp = " + 10 + " ,strength = " + (5 * Strength + XPValue) / 10 + " ,armor = " + (Strength + 2 * Precision + XPValue * 5) * (Stamina / 100) / 100 
+					+ " ,precision = " + Precision * XPValue / 10000 + " ,magic = " + MagicPower))};
 			}
 			return new List<StatPackage>() { new StatPackage("none", 0, "Scorpion has no energy to attack anymore!") };
 		}

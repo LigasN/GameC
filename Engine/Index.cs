@@ -6,45 +6,50 @@ using Game.Engine.Items;
 using Game.Engine.Items.ItemFactories;
 using Game.Engine.Items.BasicArmor;
 using Game.Engine.Interactions;
+using Game.Engine.Items.RefinedArmor;
 
 namespace Game.Engine
 {
-    // contains information about skills, items and monsters that will be available in the game
-    public partial class Index
-    {
-        private static List<SkillFactory> magicSkillFactories = new List<SkillFactory>()
-        {
-            new BasicSpellFactory()
-        };
+	// contains information about skills, items and monsters that will be available in the game
+	public partial class Index
+	{
+		private static List<SkillFactory> magicSkillFactories = new List<SkillFactory>()
+		{
+			new BasicSpellFactory()
+		};
 
-        private static List<SkillFactory> weaponSkillFactories = new List<SkillFactory>()
-        {
-            new BasicWeaponMoveFactory()
-        };
+		private static List<SkillFactory> weaponSkillFactories = new List<SkillFactory>()
+		{
+			new BasicWeaponMoveFactory()
+		};
 
-        private static List<Item> items = new List<Item>()
-        {
-            new BasicStaff(),
-            new BasicSpear(),
-            new BasicAxe(),
-            new BasicSword(),
-            new SteelArmor(),
-            new AntiMagicArmor(),
-            new BerserkerArmor(),
-            new GrowingStoneArmor()
-        };
+		private static List<Item> items = new List<Item>()
+		{
+			new BasicStaff(),
+			new BasicSpear(),
+			new BasicAxe(),
+			new BasicSword(),
+			new SteelArmor(),
+			new AntiMagicArmor(),
+			new BerserkerArmor(),
+			new GrowingStoneArmor(),
+			new Thanos_sglow(),
+			new CrystalArmor(),
+			new GoldenDragonArmor()
+		};
 
-        private static List<ItemFactory> itemFactories = new List<ItemFactory>()
-        {
-            new BasicArmorFactory()
-        };
+		private static List<ItemFactory> itemFactories = new List<ItemFactory>()
+		{
+			new BasicArmorFactory(),
+			new RefinedArmorFactory()
+		};
 
-        private static List<MonsterFactory> monsterFactories = new List<MonsterFactory>()
-        {
-            new Monsters.MonsterFactories.RatFactory(),
-            new Monsters.MonsterFactories.ScorpionFactory(),
-            new Monsters.MonsterFactories.ScorpionEmperorFactory()
-        };
+		private static List<MonsterFactory> monsterFactories = new List<MonsterFactory>()
+		{
+			new Monsters.MonsterFactories.RatFactory(),
+			new Monsters.MonsterFactories.ScorpionFactory(),
+			new Monsters.MonsterFactories.ScorpionEmperorFactory()
+		};
 
-    }
+	}
 }

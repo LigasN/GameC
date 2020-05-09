@@ -21,13 +21,14 @@ namespace Game.Engine.Monsters
 		}
 		public override List<StatPackage> BattleMove()
 		{
-			if (Stamina > 0)
+			if(Stamina > 0)
 			{
 				Stamina -= 5;
 				return new List<StatPackage>()
-					{ new StatPackage("incised", 10, (5 * Strength + XPValue),
-					(Strength + 2 * Precision + XPValue * 5) * (Stamina / 100) / 100, Precision * XPValue / 10000, MagicPower,
-					"Guh!") };
+					{ new StatPackage("incised", 10, (5 * Strength + XPValue) / 10,
+					((2 * Strength + 5 * Precision + XPValue * 5) * Stamina / 50) / 10, Precision * XPValue / 10000, MagicPower,
+					("Guh!: hp = " + 10 + " ,strength = " + (5 * Strength + XPValue) / 10 + " ,armor = " + ((2 * Strength + 5 * Precision + XPValue * 5) * Stamina / 50) / 10
+					+ " ,precision = " + Precision * XPValue / 10000 + " ,magic = " + MagicPower)) };
 			}
 			return new List<StatPackage>() { new StatPackage("none", 0, "Scorpion Giant has no energy to attack anymore!") };
 		}
