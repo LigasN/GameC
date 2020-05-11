@@ -45,6 +45,7 @@ namespace Game.Engine.Items.RefinedArmor
 		}
 		public override void ApplyBuffs(Engine.CharacterClasses.Player currentPlayer, List<string> otherItems)
 		{
+			base.ApplyBuffs(currentPlayer, otherItems);
 			List< int >statistics = currentPlayer.getStatistics();
 			player_sBestStat = (Engine.StatPackage.Statistics)statistics.IndexOf(statistics.Max());
 			player_sBestStatValue = statistics[(int)player_sBestStat];

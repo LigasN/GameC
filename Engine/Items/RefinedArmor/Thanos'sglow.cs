@@ -18,6 +18,8 @@ namespace Game.Engine.Items.RefinedArmor
         }
         public override void ApplyBuffs(Engine.CharacterClasses.Player currentPlayer, List<string> otherItems)
         {
+
+            base.ApplyBuffs(currentPlayer, otherItems);
             currentPlayer.StrengthBuff += currentPlayer.Strength * 2;
             currentPlayer.StaminaBuff += (int)((float)currentPlayer.Stamina * 0.75);
         }
