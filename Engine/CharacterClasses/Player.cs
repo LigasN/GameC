@@ -223,7 +223,7 @@ namespace Game.Engine.CharacterClasses
             // learn a new skill from the list (maximum three choices)
             if (learningSkills.Count > 2) 
             {
-                parentSession.SendText("Choose a spell to learn:");
+                parentSession.SendText("Choose a skill to learn:");
                 parentSession.SendText(learningSkills[0]+ " (press 1)");
                 parentSession.SendText(learningSkills[1]+ " (press 2)");
                 parentSession.SendText(learningSkills[2]+ " (press 3)");
@@ -234,7 +234,7 @@ namespace Game.Engine.CharacterClasses
             }
             else if(learningSkills.Count > 1)
             {
-                parentSession.SendText("Choose a spell to learn:");
+                parentSession.SendText("Choose a skill to learn:");
                 parentSession.SendText(learningSkills[0] + " (press 1)");
                 parentSession.SendText(learningSkills[1] + " (press 2)");
                 string key = parentSession.GetValidKeyResponse(new List<string>() { "1", "2"}).Item1;
@@ -243,7 +243,7 @@ namespace Game.Engine.CharacterClasses
             }
             else if (learningSkills.Count > 0)
             {
-                parentSession.SendText("Choose a spell to learn:");
+                parentSession.SendText("Choose a skill to learn:");
                 parentSession.SendText(learningSkills[0] + " (press 1)");
                 string key = parentSession.GetValidKeyResponse(new List<string>() {"1"}).Item1;
                 if (key == "1") Learn(learningSkills[0]);
