@@ -6,6 +6,7 @@ using Game.Engine.Items;
 using Game.Engine.Items.ItemFactories;
 using Game.Engine.Items.BasicArmor;
 using Game.Engine.Interactions;
+using Game.Engine.Interactions.InteractionFactories;
 using Game.Engine.Items.RefinedArmor;
 
 namespace Game.Engine
@@ -52,5 +53,11 @@ namespace Game.Engine
 			new Monsters.MonsterFactories.ScorpionEmperorFactory()
 		};
 
-	}
+        private static List<InteractionFactory> interactionFactories = new List<InteractionFactory>()
+        {
+            new SkillForgetFactory(),
+            new GymirHymirFactory()
+        };
+
+    }
 }
