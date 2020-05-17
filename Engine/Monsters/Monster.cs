@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Game.Engine.Items;
+using Game.Engine.Items.ItemFactories;
+using System;
 using System.Collections.Generic;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
@@ -9,6 +11,7 @@ namespace Game.Engine.Monsters
     public abstract class Monster : Subject
     {
         // abstract class representing a monster
+        protected TrophyFactory trophyFactory = new TrophyFactory();
         public int XPValue { get; protected set; }
         public string BattleGreetings { get; protected set; } // what the monster says when it attacks the player for the first time
         public abstract List<StatPackage> BattleMove(); // perform an action in the battle
@@ -23,5 +26,7 @@ namespace Game.Engine.Monsters
                 MagicPower -= pack.MagicPowerDmg;
             }
         }
-    }
+
+		public abstract Item getTrophy(); // returns trophy item of specific monster
+	}
 }

@@ -16,8 +16,6 @@ namespace Game.Engine.Items
         public int PrMod { get; protected set; }
         public int MgcMod { get; protected set; }
         public int StaMod { get; protected set; }
-        public string PublicName { get; protected set; } // the name to be displayed in game
-        public string PublicTip { get; protected set; } // short description of special bonuses
         public int GoldValue { get; protected set; } 
         public virtual bool IsAxe { get; protected set; } = false;
         public virtual bool IsSword { get; protected set; } = false;

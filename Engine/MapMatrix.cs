@@ -28,7 +28,7 @@ namespace Game.Engine
         private Random rng;
         private GameSession parentSession;
         public Dictionary<int, Monster> Monsters { get; set; }
-        public Dictionary<int, Interaction> Interactions { get; private set; }
+        public Dictionary<int, Interaction> Interactions { get; set; }
         public int[,] Matrix { get; set; }
         public int Width { get; set; } = 25;
         public int Height { get; set; } = 20;
@@ -71,6 +71,10 @@ namespace Game.Engine
                     if (Matrix[y, x] == 1000)
                     {
                         monDict.Add(y * Width + x, Index.RandomMonsterFactory());
+                        if (!Interactions.ContainsKey(Width * y + x))
+                        {
+                            Interactions.Add(Width * y + x, null);
+                        }
                     }
                 }
             }

@@ -13,7 +13,9 @@ namespace Game.Engine
     [Serializable]
     public abstract class DisplayItem
     {
-        public string Name { get; protected set;  }
+        public string Name { get; protected set; }
+        public string PublicName { get; protected set; } // the name to be displayed in game
+        public string PublicTip { get; protected set; } // short description of special bonuses
         public virtual Image GetImage()
         {
             Image img = new Image();

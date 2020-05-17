@@ -8,6 +8,7 @@ using Game.Engine.Skills;
 using System.Windows.Controls;
 using Game.Engine.Interactions;
 using Game.Engine.Monsters;
+using Game.Engine.Items.ItemFactories;
 
 namespace Game.Engine
 {
@@ -293,6 +294,7 @@ namespace Game.Engine
                         {
                             parentPage.UpdateMonster(mapMatrix.Width * PlayerPosTop + PlayerPosLeft, mapMatrix.HintMonsterImage(playerPosLeft, playerPosTop), mapMatrix.Width);
                             UpdateStat(7, monster.XPValue);
+                            AddThisItem(monster.getTrophy());
                             mapMatrix.Monsters[mapMatrix.Width * PlayerPosTop + PlayerPosLeft] = null; // this monster was defeated
                         }
                         else mapMatrix.Monsters[mapMatrix.Width * PlayerPosTop + PlayerPosLeft] = monster; // remember this monster until the next time

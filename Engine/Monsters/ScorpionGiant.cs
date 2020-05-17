@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Game.Engine.Items;
+using Game.Engine.Items.Trophies;
+using System;
 using System.Collections.Generic;
 
 namespace Game.Engine.Monsters
@@ -18,6 +20,7 @@ namespace Game.Engine.Monsters
 			XPValue = 60 + playerLevel;
 			Name = "monster0004";
 			BattleGreetings = "You will die before crossing this doorstep!";
+			PublicName = "Scorpion Giant";
 		}
 		public override List<StatPackage> BattleMove()
 		{
@@ -33,6 +36,10 @@ namespace Game.Engine.Monsters
 			return new List<StatPackage>() { new StatPackage("none", 0, "Scorpion Giant has no energy to attack anymore!") };
 		}
 
+		public override Item getTrophy()
+		{
+			return trophyFactory.getTrophy(Trophy.MonsterTypes.ScorpionGiant);
+		}
 	}
 
 }

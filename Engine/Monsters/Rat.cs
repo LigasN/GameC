@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Game.Engine.Items;
+using Game.Engine.Items.Trophies;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +23,7 @@ namespace Game.Engine.Monsters
             XPValue = 20 + ratLevel;
             Name = "monster0001";
             BattleGreetings = null; // rat doesn't say anything
+            PublicName = "Rat";
         }
         public override List<StatPackage> BattleMove()
         {
@@ -34,6 +37,11 @@ namespace Game.Engine.Monsters
             {
                 return new List<StatPackage>() { new StatPackage("none", 0, "Rat has no energy to attack anymore!") };
             }
+        }
+
+        public override Item getTrophy()
+        {
+            return trophyFactory.getTrophy(Trophy.MonsterTypes.Rat);
         }
     }
 }

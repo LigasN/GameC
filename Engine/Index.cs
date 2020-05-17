@@ -8,6 +8,7 @@ using Game.Engine.Items.BasicArmor;
 using Game.Engine.Interactions;
 using Game.Engine.Interactions.InteractionFactories;
 using Game.Engine.Items.RefinedArmor;
+using Game.Engine.Items.Trophies;
 
 namespace Game.Engine
 {
@@ -37,7 +38,12 @@ namespace Game.Engine
 			new GrowingStoneArmor(),
 			new Thanos_sglow(),
 			new CrystalArmor(),
-			new GoldenDragonArmor()
+			new GoldenDragonArmor(),
+			new RatTrophy(),
+			new EvolvedRatTrophy(),
+			new ScorpionTrophy(),
+			new ScorpionEmperorTrophy(),
+			new ScorpionGiantTrophy()
 		};
 
 		private static List<ItemFactory> itemFactories = new List<ItemFactory>()
@@ -53,11 +59,11 @@ namespace Game.Engine
 			new Monsters.MonsterFactories.ScorpionEmperorFactory()
 		};
 
-        private static List<InteractionFactory> interactionFactories = new List<InteractionFactory>()
-        {
-            new SkillForgetFactory(),
-            new GymirHymirFactory()
-        };
+		private static List<InteractionFactory> interactionFactories = new List<InteractionFactory>()
+		{
+			new SkillForgetFactory(),
+			new GymirHymirFactory()
+		};
 
-    }
+	}
 }

@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Game.Engine.Items;
+using Game.Engine.Items.Trophies;
+using System;
 using System.Collections.Generic;
+using System.Windows.Navigation;
 
 namespace Game.Engine.Monsters
 {
@@ -18,10 +21,11 @@ namespace Game.Engine.Monsters
 			XPValue = 100 + playerLevel;
 			Name = "monster0005";
 			BattleGreetings = "How it is possible that You killed my guard!";
+			PublicName = "Scorpion Emperor";
 		}
 		public override List<StatPackage> BattleMove()
 		{
-			if (Stamina > 0)
+			if(Stamina > 0)
 			{
 				Stamina -= 5;
 				return new List<StatPackage>()
@@ -33,6 +37,10 @@ namespace Game.Engine.Monsters
 			return new List<StatPackage>() { new StatPackage("none", 0, "Scorpion Emperor has no energy to attack anymore!") };
 		}
 
+		public override Item getTrophy()
+		{
+			return trophyFactory.getTrophy(Trophy.MonsterTypes.ScorpionEmperor);
+		}
 	}
 
 }

@@ -15,7 +15,8 @@ namespace Game.Engine.Interactions
     abstract class ImageInteraction : Interaction
     {
         // image for display
-        // make it follow the name convention "interactionXXXXdisplay.png"
+        // make it follow the name convention "interactionXXXXdisplay.png" 
+        // TODO: ???? Rest of the interactions have normal name!
         protected string displayedImageName = "";
         public ImageInteraction(GameSession ses) : base(ses) { }
         public override void Run()

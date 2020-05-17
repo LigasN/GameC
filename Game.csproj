@@ -131,6 +131,10 @@
     <Compile Include="Engine\Interactions\Built-In\ShopInteraction.cs" />
     <Compile Include="Engine\Interactions\InteractionFactories\SkillForgetFactory.cs" />
     <Compile Include="Engine\Interactions\ListBoxInteraction.cs" />
+    <Compile Include="Engine\Interactions\Special\Authority.cs" />
+    <Compile Include="Engine\Interactions\Special\CommisionsBoard.cs" />
+    <Compile Include="Engine\Interactions\Special\Logger.cs" />
+    <Compile Include="Engine\Interactions\Special\Principal.cs" />
     <Compile Include="Engine\Items\Axe.cs" />
     <Compile Include="Engine\Items\BasicArmor\AntiMagicArmor.cs" />
     <Compile Include="Engine\Items\BasicArmor\BerserkerArmor.cs" />
@@ -145,6 +149,14 @@
     <Compile Include="Engine\Items\ItemFactories\BasicArmorFactory.cs" />
     <Compile Include="Engine\Items\ItemFactories\ItemFactory.cs" />
     <Compile Include="Engine\Items\ItemFactories\RefinedArmorFactory.cs" />
+    <Compile Include="Engine\Items\Commision\Commission.cs" />
+    <Compile Include="Engine\Items\ItemFactories\TrophyFactory.cs" />
+    <Compile Include="Engine\Items\Trophies\EvolvedRatTrophy.cs" />
+    <Compile Include="Engine\Items\Trophies\RatTrophy.cs" />
+    <Compile Include="Engine\Items\Trophies\ScorpionEmperorTrophy.cs" />
+    <Compile Include="Engine\Items\Trophies\ScorpionGiantTrophy.cs" />
+    <Compile Include="Engine\Items\Trophies\ScorpionTrophy.cs" />
+    <Compile Include="Engine\Items\Trophies\Trophy.cs" />
     <Compile Include="Engine\Items\RefinedArmor\CrystalArmor.cs" />
     <Compile Include="Engine\Items\RefinedArmor\GoldenDragonArmor.cs" />
     <Compile Include="Engine\Items\RefinedArmor\Thanos%27sGlow.cs" />
@@ -277,7 +289,13 @@
     <Resource Include="Display\Assets\monster0004.png" />
     <Resource Include="Display\Assets\monster0003.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Display\Assets\interaction0005.png" />
+    <Resource Include="Display\Assets\interaction0006.png" />
+    <Resource Include="Display\Assets\interaction0007.png" />
+    <Resource Include="Display\Assets\item0012.png" />
+    <Resource Include="Display\Assets\item0013.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Display\Assets\item0009.png" />
     <Resource Include="Display\Assets\item0010.png" />
@@ -289,6 +307,12 @@
   <ItemGroup>
     <Resource Include="Display\Assets\interaction0003.png" />
     <Resource Include="Display\Assets\interaction0004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Display\Assets\item0014.png" />
+    <Resource Include="Display\Assets\item0015.png" />
+    <Resource Include="Display\Assets\item0016.png" />
+    <Resource Include="Display\Assets\item0017.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

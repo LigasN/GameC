@@ -19,7 +19,7 @@ namespace Game.Engine.Monsters.MonsterFactories
 				encounterNumber++;
 				return new ScorpionEmperor(playerLevel);
 			}
-			else return null; // no more rats to fight
+			else return null; // no more to fight with
 		}
 		public override System.Windows.Controls.Image Hint()
 		{
