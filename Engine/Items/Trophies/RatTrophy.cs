@@ -8,6 +8,6 @@ namespace Game.Engine.Items.Trophies
 {
 	class RatTrophy : Trophy
 	{
-		public RatTrophy() : base(MonsterTypes.Rat, "item0013") { }
+		public RatTrophy() : base(MonsterTypes.Rat) { }
 	}
 }

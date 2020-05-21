@@ -16,15 +16,15 @@ namespace Game.Engine.Items.Trophies
 			Scorpion,
 			ScorpionEmperor,
 			ScorpionGiant,
-			Size	// Just size of enum
+			Size    // Just size of enum
 		}
-		public Trophy(MonsterTypes monsterType, string imageName) : base(imageName)
+		public Trophy(MonsterTypes monsterType) : base(MonsterTypeEnum2ImgName(monsterType))
 		{
 			PublicName = "Trophy of the " + MonsterTypeEnum2String(monsterType);
 			GoldValue = 10;
 		}
 
-		private string MonsterTypeEnum2String(MonsterTypes monsterType)
+		public static string MonsterTypeEnum2String(MonsterTypes monsterType)
 		{
 			switch(monsterType)
 			{
@@ -41,6 +41,10 @@ namespace Game.Engine.Items.Trophies
 				default:
 					throw new NotImplementedException();
 			}
+		}
+		public static string MonsterTypeEnum2ImgName(MonsterTypes monsterType)
+		{
+			return "item00" + (13 + (int)monsterType);
 		}
 
 	}

@@ -126,9 +126,12 @@
     <Compile Include="Engine\Interactions\ConsoleInteraction.cs" />
     <Compile Include="Engine\Interactions\ImageInteraction.cs" />
     <Compile Include="Engine\Interactions\Interaction.cs" />
+    <Compile Include="Engine\Interactions\InteractionFactories\AuthorityFactory.cs" />
+    <Compile Include="Engine\Interactions\InteractionFactories\CommisionBoardFactory.cs" />
     <Compile Include="Engine\Interactions\InteractionFactories\GymirHymirFactory.cs" />
     <Compile Include="Engine\Interactions\InteractionFactories\InteractionFactory.cs" />
     <Compile Include="Engine\Interactions\Built-In\ShopInteraction.cs" />
+    <Compile Include="Engine\Interactions\InteractionFactories\LoggerFactory.cs" />
     <Compile Include="Engine\Interactions\InteractionFactories\SkillForgetFactory.cs" />
     <Compile Include="Engine\Interactions\ListBoxInteraction.cs" />
     <Compile Include="Engine\Interactions\Special\Authority.cs" />

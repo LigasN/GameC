@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace Game.Engine.Items.Commision
 {
-	class Commission : DisplayItem
+	public class Commission
 	{
 		public enum PossibleContent
 		{
 			WoodComission,
 			MonsterComission
 		}
+		public bool signed { get; private set; }
+		public string content { get; set; }
+		public PossibleContent contentType { get; set; }
+		public int amount { get; set; }
 
-		PossibleContent content;
-		public Commission(PossibleContent content, int amount = 0)
+		public int monsterType { get; private set; }
+
+		public Commission(string content, PossibleContent contentType, int amount = 0, int monsterType = -1)
 		{
-			Name = "item0012";
-			PublicName = "Commision";
+			this.contentType = contentType;
+			this.amount = amount;
 			this.content = content;
-
-			switch(content)
-			{
-				case PossibleContent.WoodComission:
-					PublicTip = "I need help with wood. Please meet me somewhere. Short blond with red T-shirt";
-					break;
-				case PossibleContent.MonsterComission:
-					PublicTip = "Our city needs some help with mosters. Please kill " + amount + " of these *** and bring me a trophy of each one!";
-					break;
-			}
+			this.monsterType = monsterType;
+		}
+		public void MakeSign()
+		{
+			signed = true;
 		}
 	}
 }

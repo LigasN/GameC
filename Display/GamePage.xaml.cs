@@ -372,6 +372,15 @@ namespace Game.Display
                 }
             }
 
+            if (e.Key == Key.C)
+            {
+                AddConsoleText("Currently your commisions:");
+                foreach(Engine.Items.Commision.Commission c in currentSession.currentPlayer.Commisions)
+                {
+                    AddConsoleText(c.content + (c.signed == true ? "\n Signed" : ""));
+                }
+            }
+
         }
 
     }

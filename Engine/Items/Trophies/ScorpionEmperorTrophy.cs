@@ -8,6 +8,6 @@ namespace Game.Engine.Items.Trophies
 {
 	class ScorpionEmperorTrophy : Trophy
 	{
-		public ScorpionEmperorTrophy() : base(MonsterTypes.ScorpionEmperor, "item0017") { }
+		public ScorpionEmperorTrophy() : base(MonsterTypes.ScorpionEmperor) { }
 	}
 }

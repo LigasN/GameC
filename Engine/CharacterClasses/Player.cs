@@ -12,6 +12,10 @@ namespace Game.Engine.CharacterClasses
     {
         // statistics: Health, Strength, Armor, Precision, MagicPower, Stamina, XP (hidden), Level, Gold
 
+        //----TaskG3-G4--------------------------
+        public List<Items.Commision.Commission> Commisions { get; set; }
+
+        //----!TaskG3-G4--------------------------
 
         //----TaskG1-G2--------------------------
 
@@ -164,6 +168,7 @@ namespace Game.Engine.CharacterClasses
             ListOfSkills = new List<Skill>();
             Name = "player";
             Level = 1;
+            Commisions = new List<Items.Commision.Commission>();
         }
         private int LevelBasedOnXP()
         {

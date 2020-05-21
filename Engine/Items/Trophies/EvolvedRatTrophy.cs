@@ -9,6 +9,6 @@ namespace Game.Engine.Items.Trophies
 {
 	class EvolvedRatTrophy : Trophy
 	{
-		public EvolvedRatTrophy() : base(MonsterTypes.RatEvolved, "item0014") { }
+		public EvolvedRatTrophy() : base(MonsterTypes.RatEvolved) { }
 	}
 }

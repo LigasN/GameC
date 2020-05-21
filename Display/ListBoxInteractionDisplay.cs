@@ -28,7 +28,7 @@ namespace Game.Display
             box.SelectionChanged += new SelectionChangedEventHandler(Chosen);
             parentPage.PageGrid.Children.Add(box);
             Grid.SetColumn(box, 0);
-            Grid.SetRow(box, 0);
+            Grid.SetRow(box, 2);
             Grid.SetRowSpan(box, 2);
             box.ItemsSource = choices;
         }
