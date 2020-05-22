@@ -65,7 +65,8 @@ namespace Game.Engine
 			new GymirHymirFactory(),
 			new CommisionBoardFactory(),
 			new AuthorityFactory(),
-			new LoggerFactory()
+			new LoggerFactory(),
+			new UnivesityFactory()
 		};
 
 	}

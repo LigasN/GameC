@@ -133,11 +133,13 @@
     <Compile Include="Engine\Interactions\Built-In\ShopInteraction.cs" />
     <Compile Include="Engine\Interactions\InteractionFactories\LoggerFactory.cs" />
     <Compile Include="Engine\Interactions\InteractionFactories\SkillForgetFactory.cs" />
+    <Compile Include="Engine\Interactions\InteractionFactories\UnivesityFactory.cs" />
     <Compile Include="Engine\Interactions\ListBoxInteraction.cs" />
     <Compile Include="Engine\Interactions\Special\Authority.cs" />
     <Compile Include="Engine\Interactions\Special\CommisionsBoard.cs" />
     <Compile Include="Engine\Interactions\Special\Logger.cs" />
     <Compile Include="Engine\Interactions\Special\Principal.cs" />
+    <Compile Include="Engine\Interactions\Special\University.cs" />
     <Compile Include="Engine\Items\Axe.cs" />
     <Compile Include="Engine\Items\BasicArmor\AntiMagicArmor.cs" />
     <Compile Include="Engine\Items\BasicArmor\BerserkerArmor.cs" />
@@ -316,6 +318,9 @@
     <Resource Include="Display\Assets\item0015.png" />
     <Resource Include="Display\Assets\item0016.png" />
     <Resource Include="Display\Assets\item0017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Display\Assets\interaction0008.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
