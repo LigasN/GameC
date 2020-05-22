@@ -116,16 +116,16 @@ I've created three skills:
 
 ### New group of interactions
 I've created some interactions:
-* CommisionsBoard.cs![CommisionsBoard](./Display/Assets/interation0005.png) - here player can get commision and start earning gold.
-* Authority.cs![Authority](./Display/Assets/interation0006.png) - person who get's commisions for killing monsters and give gold for it.
-* Logger.cs![Logger](./Display/Assets/interation0007.png) - when player have commision for wood logging, here he can work and get the gold.
-* University.cs![University](./Display/Assets/interation0008.png) - here player can learn new available skills for only 50 gold!
+* CommisionsBoard.cs![CommisionsBoard](./Display/Assets/interaction0005.png) - here player can get commision and start earning gold.
+* Authority.cs![Authority](./Display/Assets/interaction0006.png) - person who get's commisions for killing monsters and give gold for it.
+* Logger.cs![Logger](./Display/Assets/interaction0007.png) - when player have commision for wood logging, here he can work and get the gold.
+* University.cs![University](./Display/Assets/interaction0008.png) - here player can learn new available skills for only 50 gold!
 * Trophies - needed for commisions to kill monsters as evidence for authority.
-    * RatTrophy.cs![RatTrophy](./Display/Assets/interation0013.png)
-    * EvolvedRatTrophy.cs![EvolvedRatTrophy](./Display/Assets/interation0014.png)
-    * ScorpionTrophy.cs![ScorpionTrophy](./Display/Assets/interation0015.png)
-    * ScorpionGiantTrophy.cs![ScorpionGiantTrophy](./Display/Assets/interation0016.png)
-    * ScorpionEmperorTrophy.cs![ScorpionEmperorTrophy](./Display/Assets/interation0017.png)
+    * RatTrophy.cs![RatTrophy](./Display/Assets/item0013.png)
+    * EvolvedRatTrophy.cs![EvolvedRatTrophy](./Display/Assets/item0014.png)
+    * ScorpionTrophy.cs![ScorpionTrophy](./Display/Assets/item0015.png)
+    * ScorpionGiantTrophy.cs![ScorpionGiantTrophy](./Display/Assets/item0016.png)
+    * ScorpionEmperorTrophy.cs![ScorpionEmperorTrophy](./Display/Assets/item0017.png)
 
 * Abstract classes:
 	* Principal.cs
